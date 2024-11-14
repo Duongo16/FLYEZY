@@ -114,8 +114,7 @@ public class StatusDAO extends DBConnect {
         List<Status> list = new ArrayList<>();
         String sql = "SELECT * \n"
                 + "FROM Status\n"
-                + "ORDER BY id DESC\n"
-                + "LIMIT 6;";
+                + "Where id=13 Or id=14 Or id =8 Or id =6 Or id=7 OR id =12 Or id=10";
 
         try {
             PreparedStatement prepare = conn.prepareStatement(sql);
